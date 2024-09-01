@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content "width=device-width, initial-scale=1.0" />
+      <title>Prehestoric Era Scene with Dinosaurs and Meteors</title>
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+ </head>
+ <body>
+      <a-scene>
+            <!-- Sky -->
+            <a-sky color="#a0c8ff"></a-sky>
+         
+            <!-- Ground -->
+            <a-plane position="0 0 -5" rotation="-90 0 0" width="100" height="100" color="#7CFC00"></a-plane>
+
+
+
+
+
+            <!-- Falling Meteors -->
+            <a-sphere position="0 20 -5" radius="0.5" color="red" animation="property: position; to: 0 0 -5; dur: 3000; easing: linear; loop: true;"></a-sphere>
+<a-sphere position="-5 25 -6" radius="0.5" color="orange" animation="property: position; to: -5 0 -6; dur: 3000; easing: linear; loop: true; delay: 1000;"></a-sphere>
+<a-sphere position="5 30 -7" radius="0.5" color="blue" animation="property: position; to: 5 00 -7; dur: 3000; easing: linear; loop: true; delay: 2000;"></a-sphere>
+
+            <!-- Camera -->
+            <a-camera position="0 2 10"></a-camera>
+         </a-scene>
+       </body>
+    </html>
